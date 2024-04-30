@@ -12,20 +12,18 @@ WINDOW* nameWin = NULL;
 WINDOW* typeWin = NULL;
 WINDOW* sizeWin = NULL;
 
-
-
 int WIN_SIZE_X,WIN_SIZE_Y;
-static const int sizePathBuffer = 120, sizeNameBuffer = 120, sizeTypeBuffer = 10, sizeSizeBuffer = 10;
+static const int sizePathBuffer = 120, sizeNameBuffer = 120, sizeTypeBuffer = 20, sizeSizeBuffer = 10;
 
 
 void printWelcomeWin(){
-    getmaxyx(stdscr, WIN_SIZE_Y, WIN_SIZE_X);
+    getmaxyx(stdscr, WIN_SIZE_Y, WIN_SIZE_X);  
     if (NULL != welcomeWin){
         delwin(welcomeWin);
     }
-    welcomeWin = newwin(3, WIN_SIZE_X, 0, 0);
-    wbkgd(welcomeWin, COLOR_PAIR(1));
-    wattron(welcomeWin, COLOR_PAIR(1) | A_BOLD);
+    welcomeWin = newwin(3, WIN_SIZE_X, 0, 0);       // Создаю новое окно
+    wbkgd(welcomeWin, COLOR_PAIR(1));           // цвет фона
+    wattron(welcomeWin, COLOR_PAIR(1) | A_BOLD);    // устанавливаю атрибут символов
     char* welcomeStr = "WELCOM TO SEARCH PROGRAMM!";
     mvwprintw(welcomeWin, 0, WIN_SIZE_X/2 - strlen(welcomeStr) / 2, "%s", welcomeStr);
     refresh();
@@ -383,7 +381,7 @@ void drawMainInputBlock(char* pathBuffer,char* nameBuffer,char* typeBuffer, char
 
 void mainInputBlock(){
     char pathBuffer[sizePathBuffer], nameBuffer[sizeNameBuffer], typeBuffer[sizeTypeBuffer], sizeBuffer[sizeSizeBuffer];
-    memset(pathBuffer, '\0', sizePathBuffer);
+    memset(pathBuffer, '\0', sizePathBuffer);       // clear
     memset(nameBuffer, '\0', sizeNameBuffer);
     memset(sizeBuffer, '\0', sizeSizeBuffer); 
     memset(typeBuffer, '\0', sizeTypeBuffer);

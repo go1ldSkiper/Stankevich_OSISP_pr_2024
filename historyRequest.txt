@@ -1,8 +1,50 @@
-find /home -name BSUIR -type d -size +1
-find /home -name BSUIR -type d -size +1M
-find /home -name BSUIR -type d -size +1MB
-find /home -name BSUIR -type d -size +10MB
-find /home -name BSUIR -type d
-find /home -name BSUIR
+find /home/skipar -name Games -type f
+find /home/skipar/Games -type f
+find /home/skipar/Games
+find /home/skipar -name Games
+find /home/skipar/Games -name Wargaming.net
+find /home/skipar/Games -name war-ingnet
+find /home/skipar/Games
+find /home/skipar/DRIVERS -name ASUS System Control Interface
+find /home/skipar/DRIVERS
+find /home/skipar/DRIVERRS
+find /home/skipar -name findShell
+find /home -name findShell
+find /home/skipar/ -name findShell
+find /home/skipar -name findShell
+find /home/skipar/findShell -name header
+find /home/skipar/findShell
+find /home/skipar/findShell -name help
+find /home/skipar/findShell -name help
+find /home/skipar/findShell -name main
+find /home/skipar/findShell -name main -type f
+find /home/skipar/findShell -name main -type c
+find /home/skipar/findShell -name main
+find /home/skipar/FindShell
+find /home/skipar/findShell
+find /home/findShell
+find /home/findShell -name header
+find /home/skipar/.mozilla/firefox -type l
+find /home/skipar/.mozilla/firefox -type c
+find /home/skipar/.mozilla/firefox -type b
+find /home/skipar/.mozilla/firefox -type s
+find /home/skipar/.mozilla/firefox -type f -size 1
+find /home/skipar/.mozilla/firefox -type f
+find /home/skipar/.mozilla/firefox -type d
+find /home/skipar/.mozilla/firefox -name profils
+find /home/skipar/.mozilla/firefox/
+find /home/skipar/.mozilla/firefox
+find /home/skipar/.mozilla
+find /home/skipar/.mozilla
+find /home/skipar
+find /home/
+find /home/skiper
+find /home/skiper/.cashe
 find /home
-find /home/bobr
+find /home -name OSISP-Labs-master
+find /home -name loade
+find rd -name dasda
+find rd -name dasda
+find /home -type d
+find /home -name findShell -type d
+find /home -name findShell -type d

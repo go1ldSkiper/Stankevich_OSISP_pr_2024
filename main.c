@@ -12,8 +12,8 @@ int main() {
     keypad(stdscr, TRUE); // Включить использование функциональных клавиш
     cbreak(); // Включить режим CBREAK
     // scrollok(stdscr, true);
-    getmaxyx(stdscr, WIN_SIZE_Y, WIN_SIZE_X);
-    start_color();
+    getmaxyx(stdscr, WIN_SIZE_Y, WIN_SIZE_X);       // Получить размеры консоли
+    start_color();              // Возможность использования цветов
     init_color(COLOR_YELLOW, 1000, 1000, 0); // Создает насыщенный желтый цвет
     noecho();
     init_pair(1, COLOR_YELLOW, COLOR_BLUE);
